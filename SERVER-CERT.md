@@ -17,7 +17,7 @@
 
 ## 4.- Client authentication: client key and certificate signing request
 
-	$ openssl genrsa -out key.pem 20148
+	$ openssl genrsa -out key.pem 2048
 	$ openssl req -subj '/CN=client.domain.com' -new -key key.pem -out client.csr
 
 ## 5.- Key suitable for client authentication
